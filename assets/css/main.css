@@ -842,7 +842,7 @@ section,
 
 .hero .hero-image .image-wrapper {
   position: relative;
-  max-width: 450px;
+  max-width: 550px; /* Čia pakeičiau iš 450px į 550px, kad nuotrauka būtų didesnė */
   margin: 0 auto;
 }
 
@@ -850,6 +850,8 @@ section,
   border-radius: 20px;
   box-shadow: 0 5px 15px color-mix(in srgb, var(--default-color), transparent 95%);
   transition: transform 0.3s ease;
+  width: 100%; /* Užtikrina, kad nuotrauka gražiai užpildytų naują plotį */
+  height: auto;
 }
 
 .hero .hero-image .image-wrapper img:hover {
@@ -906,7 +908,6 @@ section,
     display: none;
   }
 }
-
 @keyframes float {
 
   0%,
